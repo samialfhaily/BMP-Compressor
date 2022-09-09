@@ -1,0 +1,1 @@
+# BMP Image Compressor
