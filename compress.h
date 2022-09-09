@@ -26,7 +26,7 @@ double benchmark(const unsigned long n, const char *algorithm, const char *restr
 
 int readOffset(const char *path, char *offset, const ssize_t size);
 int checkValidity(const BITMAPFILEHEADER *restrict header, const BITMAPINFOHEADER *restrict info);
-int readBmpHead(const char *path, BITMAPFILEHEADER *header, BITMAPINFOHEADER *info);
+int readMetadata(const char *path, BITMAPFILEHEADER *header, BITMAPINFOHEADER *info);
 int readPixels(const char *path, char *pixels, const unsigned int offset, const ssize_t imageSize);
 int writeImage(FILE *restrict outptr, const BITMAPFILEHEADER *header, const BITMAPINFOHEADER *info, const char *offset, const size_t offsetCount, const RLEPIXEL *compressed, const size_t pixelsCount);
 
